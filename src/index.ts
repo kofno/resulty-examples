@@ -32,7 +32,3 @@ logR(
 logR(
   parseIntR('4').andThen(x => parseIntR('bar').map(y => ({ x, y }))).map(nums => nums.x + nums.y),
 );
-
-logR(ok(add).ap(parseIntR('4')).ap(parseIntR('5')));
-
-logR(ok(add).ap(parseIntR('foo')).ap(parseIntR('5')));
